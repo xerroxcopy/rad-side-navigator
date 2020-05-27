@@ -5,12 +5,10 @@ import DrawerContent from './components/DrawerContent'
 import RadSideDrawer from 'nativescript-ui-sidedrawer/vue'
 import Navigator from 'nativescript-vue-navigator'
 import { routes } from './routes'
-console.log('routes', routes)
 Vue.use(Navigator, { routes })
-
 Vue.use(RadSideDrawer)
 
-Vue.config.silent = TNS_ENV === 'production'
+// Vue.config.silent = TNS_ENV === 'production'
 
 new Vue({
   render(h) {

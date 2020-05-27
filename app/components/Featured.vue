@@ -4,24 +4,19 @@
       <!-- 
             Use the NavigationButton as a side-drawer button in Android
             because ActionItems are shown on the right side of the ActionBar
-            -->
-      <NavigationButton
-        ios:visibility="collapsed"
-        icon="res://menu"
-        @tap="onDrawerButtonTap"
-      ></NavigationButton>
+      -->
+      <NavigationButton ios:visibility="collapsed" icon="res://menu" @tap="onDrawerButtonTap"></NavigationButton>
       <!-- 
             Use the ActionItem for IOS with position set to left. Using the
             NavigationButton as a side-drawer button in iOS is not possible,
             because its function is to always navigate back in the application.
-            -->
+      -->
       <ActionItem
         icon="res://menu"
         android:visibility="collapsed"
         @tap="onDrawerButtonTap"
         ios.position="left"
-      >
-      </ActionItem>
+      ></ActionItem>
       <Label class="action-bar-title" text="Featured"></Label>
     </ActionBar>
 
@@ -39,25 +34,17 @@
       </TabStrip>
 
       <TabContentItem>
+        <Label text="111111111111111111111111111111111111111111111111111111"></Label>
+      </TabContentItem>
+
+      <TabContentItem>
+        <Label text="22222222222222222222222222222222222222222222222222222222222222222222222"></Label>
+      </TabContentItem>
+
+      <TabContentItem>
         <Label
-          text="111111111111111111111111111111111111111111111111111111"
+          text="33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
         ></Label>
-      </TabContentItem>
-
-      <TabContentItem>
-        <StackLayout>
-          <Label
-            text="22222222222222222222222222222222222222222222222222222222222222222222222"
-          ></Label>
-        </StackLayout>
-      </TabContentItem>
-
-      <TabContentItem>
-        <StackLayout>
-          <Label
-            text="33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
-          ></Label>
-        </StackLayout>
       </TabContentItem>
     </Tabs>
   </Page>

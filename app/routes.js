@@ -1,11 +1,16 @@
 import Home from './components/Home'
-import Featured from './components/Featured'
+import Browse from './components/Browse'
 
 export const routes = {
   '/home': {
     component: Home,
+    meta: { name: 'Home' },
   },
-  '/featured': {
-    component: Featured,
+  '/browse': {
+    component: Browse,
+    meta: { name: 'Browse' },
   },
+  // '/featured': {
+  //   component: Featured,
+  // },
 }
